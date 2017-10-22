@@ -9,17 +9,20 @@ import com.jazzteam.gameworld.model.robots.RobotType;
 import com.jazzteam.gameworld.model.robots.RocketRobot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Component
+@Service
 public class RobotTrackerService {
+
+    private ExecutorService executorService;
 
     @Autowired
     RobotContext robotContext;
@@ -32,22 +35,8 @@ public class RobotTrackerService {
 
     @PostConstruct
     public void init() {
-        ExecutorService executorService = Executors.newFixedThreadPool(threadPoolCapacity);
-        List<RobotType> possibleRobotTypes = Arrays.asList(RobotType.values());
-        while(true) {
-            List<RobotType> allTypesOfCreatedRobots = robotContext.getCachedRobotTypes();
-            possibleRobotTypes.forEach( candidateRobotType -> {
-                if (allTypesOfCreatedRobots == null || !allTypesOfCreatedRobots.contains(candidateRobotType)) {
-                    try {
-                        Class<? extends Robot> robotClass = robotContext.getRobotClassByType(candidateRobotType);
-                        Robot candidateRobot = robotClass.getConstructor(int.class, int.class).newInstance(1, robotCommandQueueCapacity);
-                        robotContext.cacheRobot(candidateRobot);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        }
+        executorService = Executors.newFixedThreadPool(threadPoolCapacity);
+
         /*RocketRobot rocketRobot = new RocketRobot(1, 10);
         AlmightyRobot almightyRobot = new AlmightyRobot(1, 10);
         List<Robot> robots = new ArrayList<>();
@@ -69,5 +58,65 @@ public class RobotTrackerService {
         rocketRobot.setCommand(command5);
         almightyRobot.setCommand(command5);
         robots.forEach(executorService::execute);*/
+    }
+
+    public void setCommand(Command command, List<String> targetRobotIds) {
+        for(String targetRobotId : targetRobotIds) {
+            Robot robot = robotContext.getRobotById(targetRobotId);
+            if(robot.getBlockingQueue().remainingCapacity() == 0) {
+                Robot newRobot = createRobotByType(robot.getType());
+                newRobot.setCommand(command);
+            } else {
+                robot.setCommand(command);
+            }
+        }
+    }
+
+    public void setCommandToAll(Command command) {
+        List<Robot> robots = robotContext.getAllCachedRobots();
+        for(Robot robot : robots) {
+            if (robot.getBlockingQueue().remainingCapacity() == 0) {
+                Robot newRobot = createRobotByType(robot.getType());
+                newRobot.setCommand(command);
+            } else {
+                robot.setCommand(command);
+            }
+        }
+    }
+
+    @Scheduled(fixedRate = 1000)
+    private void checkCurrentSituationInGameWorld() {
+        List<RobotType> possibleRobotTypes = Arrays.asList(RobotType.values());
+        List<RobotType> allTypesOfCreatedRobots = robotContext.getCachedRobotTypes();
+        possibleRobotTypes.forEach( candidateRobotType -> {
+            if (allTypesOfCreatedRobots == null || !allTypesOfCreatedRobots.contains(candidateRobotType)) {
+                try {
+                    Class<? extends Robot> robotClass = robotContext.getRobotClassByType(candidateRobotType);
+                    Robot candidateRobot = robotClass.getConstructor(int.class, int.class).newInstance(1, robotCommandQueueCapacity);
+                    robotContext.cacheRobot(candidateRobot);
+                    executorService.execute(candidateRobot);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    private Robot createRobotByType(RobotType robotType) {
+        Robot robot = null;
+        int idNumber = robotContext.getFreeRobotIdNumber(robotType);
+        try {
+            Class<? extends Robot> robotClass = robotContext.getRobotClassByType(robotType);
+            robot = robotClass.getConstructor(int.class, int.class).newInstance(idNumber, robotCommandQueueCapacity);
+            robotContext.cacheRobot(robot);
+            executorService.execute(robot);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return robot;
+    }
+
+    public ExecutorService getExecutorService() {
+        return executorService;
     }
 }

@@ -1,6 +1,7 @@
 package com.jazzteam.gameworld.model.robots;
 
 import com.jazzteam.gameworld.model.commands.Command;
+import com.jazzteam.gameworld.model.commands.CommandType;
 
 import java.util.concurrent.BlockingQueue;
 
@@ -8,6 +9,7 @@ public class RocketRobot extends Robot {
 
     public RocketRobot(int idNumber, int queueCapacity) {
         super(idNumber, RobotType.ROCKET, queueCapacity);
+        executableCommandTypes.add(CommandType.ROCKET_FIRE);
     }
 
     @Override

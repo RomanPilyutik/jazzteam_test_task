@@ -42,6 +42,22 @@ public class RobotContext {
         }
     }
 
+
+
+    public Robot getRobotById(String robotId) {
+        Robot robot = null;
+        for(Map<String, Robot> robotsById : robotCache.values()) {
+            robot = robotsById.get(robotId);
+            if(robot != null) {
+                break;
+            }
+        }
+        if(robot == null) {
+            System.out.println("Robot with id='" + robotId + "' doesn't exist in game world.");
+        }
+        return robot;
+    }
+
     public void removeRobotFromCache(Robot robot) {
         if(robotCache.get(robot.getType()) != null) {
             robotCache.get(robot.getType()).remove(robot.getId());
@@ -73,5 +89,21 @@ public class RobotContext {
             throw new Exception("Registered class '" + resultClass.toString() + "' isn't a Robot inheritor.");
         }
         return resultClass;
+    }
+
+    public int getFreeRobotIdNumber(RobotType robotType) {
+        List<String> robotIds = new ArrayList<>(robotCache.get(robotType).keySet());
+        Collections.sort(robotIds);
+        String lastCreatedId = robotIds.get(-1);
+        int idNumber = Integer.valueOf(lastCreatedId.replaceAll(robotType.toString(), "")) + 1;
+        return idNumber;
+    }
+
+    public List<Robot> getAllCachedRobots() {
+        List<Robot> allCachedRobots = new ArrayList<>();
+        for(Map<String, Robot> robotsById : robotCache.values()) {
+            allCachedRobots.addAll(robotsById.values());
+        }
+        return allCachedRobots;
     }
 }

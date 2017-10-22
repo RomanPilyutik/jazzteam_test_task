@@ -1,21 +1,35 @@
 package com.jazzteam.gameworld.model.robots;
 
+import com.jazzteam.gameworld.context.RobotContext;
 import com.jazzteam.gameworld.model.commands.Command;
 import com.jazzteam.gameworld.model.commands.CommandType;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+@Component
 public class Robot implements Runnable {
     private String id;
     private RobotType type;
     private boolean isBusy;
     private BlockingQueue<Command> commandQueue;
     private boolean isDestroyed = false;
+    protected List<CommandType> executableCommandTypes = new ArrayList<>();
+
+    @Autowired
+    private RobotContext robotContext;
 
     protected Robot(int idNumber, RobotType type, int queueCapacity) {
         this.id = type.toString() + idNumber;
         this.type = type;
         this.commandQueue = new ArrayBlockingQueue<>(queueCapacity);
+        executableCommandTypes.addAll(Arrays.asList(CommandType.GO_FORWARD, CommandType.GO_BACKWARD,
+                CommandType.TURN_LEFT, CommandType.TURN_RIGHT));
     }
 
     @Override
@@ -24,7 +38,9 @@ public class Robot implements Runnable {
         try {
             do {
                 if(command != null) {
+                    isBusy = true;
                     executeCommand(command);
+                    isBusy = false;
                 }
             } while((command = commandQueue.take()).getType() != CommandType.SELF_DESTRUCTION);
         } catch (InterruptedException e) {
@@ -61,6 +77,7 @@ public class Robot implements Runnable {
 
     public void destroyRobot() {
         this.isDestroyed = true;
+        robotContext.removeRobotFromCache(this);
     }
 
     public boolean isDestroyed() {
