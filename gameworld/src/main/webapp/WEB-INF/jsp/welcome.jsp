@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">
 <head>
 
@@ -18,12 +19,33 @@
 <div class="container">
 
     <div class="starter-template">
-        <h1>Title</h1>
-        <h2>Message: ${message}</h2>
+        <label for="robots">Launched robots:</label>
+        <select id="robots" multiple>
+        </select>
+        <br/>
+        <label for="commands">Possible commands:</label>
+        <select id="commands">
+            <c:forEach items="${commands}" var="command">
+                <option value="${command}">${command}</option>
+            </c:forEach>
+        </select>
+        <br/>
+        <input type="button" value="Set command" id="setCommand" onclick="setCommand(false)">
+        <input type="button" value="Set command to all" id="setCommandToAll" onclick="setCommand(true)">
+        <br/>
+        <label for="logs">LOGS:</label>
+        <br/>
+        <textarea id="logs"></textarea>
     </div>
 
 </div>
 
 </body>
+
+
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
 
 </html>

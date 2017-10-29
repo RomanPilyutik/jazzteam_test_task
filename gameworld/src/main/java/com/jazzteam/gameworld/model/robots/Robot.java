@@ -1,9 +1,9 @@
 package com.jazzteam.gameworld.model.robots;
 
-import com.jazzteam.gameworld.context.RobotContext;
 import com.jazzteam.gameworld.model.commands.Command;
 import com.jazzteam.gameworld.model.commands.CommandType;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -14,17 +14,21 @@ import java.util.concurrent.BlockingQueue;
 
 @Component
 public class Robot implements Runnable {
+
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
     private String id;
     private RobotType type;
     private boolean isBusy;
     private BlockingQueue<Command> commandQueue;
     private boolean isDestroyed = false;
+    private int idNumber;
     protected List<CommandType> executableCommandTypes = new ArrayList<>();
 
-    @Autowired
-    private RobotContext robotContext;
+    protected Robot() {}
 
     protected Robot(int idNumber, RobotType type, int queueCapacity) {
+        this.idNumber = idNumber;
         this.id = type.toString() + idNumber;
         this.type = type;
         this.commandQueue = new ArrayBlockingQueue<>(queueCapacity);
@@ -36,13 +40,15 @@ public class Robot implements Runnable {
     public void run() {
         Command command = null;
         try {
-            do {
-                if(command != null) {
-                    isBusy = true;
-                    executeCommand(command);
-                    isBusy = false;
+            while(true) {
+                command = commandQueue.take();
+                isBusy = true;
+                executeCommand(command);
+                isBusy = false;
+                if(command.getType() == CommandType.SELF_DESTRUCTION) {
+                    break;
                 }
-            } while((command = commandQueue.take()).getType() != CommandType.SELF_DESTRUCTION);
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -51,33 +57,28 @@ public class Robot implements Runnable {
     public void executeCommand(Command command) {
         switch (command.getType()) {
             case GO_FORWARD:
-                System.out.println(this.toString() + " go forward.");
+                log.info(this.toString() + " go forward.");
                 break;
             case GO_BACKWARD:
-                System.out.println(this.toString() + " go backward.");
+                log.info(this.toString() + " go backward.");
                 break;
             case TURN_LEFT:
-                System.out.println(this.toString() + " turn left.");
+                log.info(this.toString() + " turn left.");
                 break;
             case TURN_RIGHT:
-                System.out.println(this.toString() + " turn right.");
+                log.info(this.toString() + " turn right.");
                 break;
             case SELF_DESTRUCTION:
-                destroyRobot();
-                System.out.println(this.toString() + " destroyed.");
+                this.isDestroyed = true;
+                log.info(this.toString() + " destroyed.");
                 break;
             default:
-                System.out.println(this.toString() + " doesn't support command " + command.getType() + ".");
+                log.info(this.toString() + " doesn't support command " + command.getType() + ".");
         }
     }
 
     public void setCommand(Command command) {
         commandQueue.add(command);
-    }
-
-    public void destroyRobot() {
-        this.isDestroyed = true;
-        robotContext.removeRobotFromCache(this);
     }
 
     public boolean isDestroyed() {
@@ -108,12 +109,32 @@ public class Robot implements Runnable {
         this.isBusy = isBusy;
     }
 
-    public BlockingQueue<Command> getBlockingQueue() {
+    public BlockingQueue<Command> getCommandQueue() {
         return commandQueue;
     }
 
-    public void setBlockingQueue(BlockingQueue<Command> commandQueue) {
+    public void setCommandQueue(BlockingQueue<Command> commandQueue) {
         this.commandQueue = commandQueue;
+    }
+
+    public void setDestroyed(boolean isDestroyed) {
+        this.isDestroyed = isDestroyed;
+    }
+
+    public List<CommandType> getExecutableCommandTypes() {
+        return executableCommandTypes;
+    }
+
+    public void setExecutableCommandTypes(List<CommandType> executableCommandTypes) {
+        this.executableCommandTypes = executableCommandTypes;
+    }
+
+    public int getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(int idNumber) {
+        this.idNumber = idNumber;
     }
 
     @Override

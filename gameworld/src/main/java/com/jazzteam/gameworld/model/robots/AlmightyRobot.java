@@ -2,11 +2,14 @@ package com.jazzteam.gameworld.model.robots;
 
 import com.jazzteam.gameworld.model.commands.Command;
 import com.jazzteam.gameworld.model.commands.CommandType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
-import java.util.concurrent.BlockingQueue;
 
 public class AlmightyRobot extends Robot {
+
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public AlmightyRobot(int idNumber, int queueCapacity) {
         super(idNumber, RobotType.ALMIGHTY, queueCapacity);
@@ -18,13 +21,13 @@ public class AlmightyRobot extends Robot {
     public void executeCommand(Command command) {
         switch (command.getType()) {
             case CANNON_FIRE:
-                System.out.println(this.toString() + "produce cannon volley.");
+                log.info(this.toString() + " produce cannon volley.");
                 break;
             case ROCKET_FIRE:
-                System.out.println(this.toString() + "produce rocket volley.");
+                log.info(this.toString() + " produce rocket volley.");
                 break;
             case BLASTER_FIRE:
-                System.out.println(this.toString() + "produce blaster volley.");
+                log.info(this.toString() + " produce blaster volley.");
                 break;
             default:
                 super.executeCommand(command);

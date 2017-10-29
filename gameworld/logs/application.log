@@ -1,0 +1,297 @@
+2017-10-28 11:02:19 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 1752 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-28 11:02:19 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-28 11:02:19 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-28 11:02:19 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b5d503f: startup date [Sat Oct 28 11:02:19 MSK 2017]; root of context hierarchy
+2017-10-28 11:02:20 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-28 11:02:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-28 11:02:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-28 11:02:20 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 11:02:20 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-28 11:02:21 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-28 11:02:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-28 11:02:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-28 11:02:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-28 11:02:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-28 11:02:21 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-28 11:02:21 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-28 11:02:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:02:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:02:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-28 11:02:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-28 11:02:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-28 11:02:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-28 11:02:21 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-28 11:02:21 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 2.579 seconds (JVM running for 6.162)
+2017-10-28 11:02:27 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 11:03:30 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b5d503f: startup date [Sat Oct 28 11:02:19 MSK 2017]; root of context hierarchy
+2017-10-28 11:03:30 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-28 11:03:38 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 4352 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-28 11:03:38 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-28 11:03:38 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-28 11:03:38 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47f83675: startup date [Sat Oct 28 11:03:38 MSK 2017]; root of context hierarchy
+2017-10-28 11:03:39 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-28 11:03:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-28 11:03:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-28 11:03:39 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 11:03:39 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-28 11:03:40 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-28 11:03:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-28 11:03:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-28 11:03:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-28 11:03:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-28 11:03:40 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-28 11:03:40 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-28 11:03:40 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:03:40 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:03:40 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-28 11:03:40 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-28 11:03:40 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-28 11:03:40 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-28 11:03:40 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-28 11:03:40 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 2.577 seconds (JVM running for 6.385)
+2017-10-28 11:03:40 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 11:05:38 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47f83675: startup date [Sat Oct 28 11:03:38 MSK 2017]; root of context hierarchy
+2017-10-28 11:05:38 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-28 11:05:45 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 5064 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-28 11:05:45 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-28 11:05:45 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-28 11:05:45 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@622b3a9b: startup date [Sat Oct 28 11:05:45 MSK 2017]; root of context hierarchy
+2017-10-28 11:05:47 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-28 11:05:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-28 11:05:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-28 11:05:47 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 11:05:47 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-28 11:05:47 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-28 11:05:47 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-28 11:05:47 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-28 11:05:47 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-28 11:05:47 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-28 11:05:48 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-28 11:05:48 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-28 11:05:48 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:05:48 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:05:48 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-28 11:05:48 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-28 11:05:48 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-28 11:05:48 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-28 11:05:48 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-28 11:05:48 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 2.721 seconds (JVM running for 6.531)
+2017-10-28 11:05:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 11:06:05 [http-nio-8080-exec-9] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='ROCKET1'.
+2017-10-28 11:06:05 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' destroyed.
+2017-10-28 11:08:05 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@622b3a9b: startup date [Sat Oct 28 11:05:45 MSK 2017]; root of context hierarchy
+2017-10-28 11:08:05 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-28 11:08:13 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 4120 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-28 11:08:13 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-28 11:08:13 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-28 11:08:13 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2349092c: startup date [Sat Oct 28 11:08:13 MSK 2017]; root of context hierarchy
+2017-10-28 11:08:14 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-28 11:08:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-28 11:08:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-28 11:08:15 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 11:08:15 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-28 11:08:15 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-28 11:08:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-28 11:08:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-28 11:08:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-28 11:08:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-28 11:08:15 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-28 11:08:15 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-28 11:08:15 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:08:15 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:08:15 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-28 11:08:15 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-28 11:08:15 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-28 11:08:15 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-28 11:08:15 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-28 11:08:15 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 2.504 seconds (JVM running for 6.062)
+2017-10-28 11:08:16 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 11:08:23 [http-nio-8080-exec-9] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='CANNON1'.
+2017-10-28 11:08:23 [pool-1-thread-2] INFO  c.j.g.model.robots.CannonRobot - CANNON robot with id='CANNON1' destroyed.
+2017-10-28 11:09:43 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2349092c: startup date [Sat Oct 28 11:08:13 MSK 2017]; root of context hierarchy
+2017-10-28 11:09:43 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-28 11:09:53 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 3060 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-28 11:09:53 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-28 11:09:53 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-28 11:09:53 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65ca2940: startup date [Sat Oct 28 11:09:53 MSK 2017]; root of context hierarchy
+2017-10-28 11:09:54 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-28 11:09:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-28 11:09:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-28 11:09:54 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 11:09:54 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-28 11:09:54 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-28 11:09:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-28 11:09:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-28 11:09:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-28 11:09:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-28 11:09:55 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-28 11:09:55 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-28 11:09:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:09:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:09:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-28 11:09:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-28 11:09:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-28 11:09:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-28 11:09:55 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-28 11:09:55 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 2.448 seconds (JVM running for 6.292)
+2017-10-28 11:09:56 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 11:10:02 [http-nio-8080-exec-9] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='ROCKET1'.
+2017-10-28 11:10:02 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' destroyed.
+2017-10-28 11:10:36 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65ca2940: startup date [Sat Oct 28 11:09:53 MSK 2017]; root of context hierarchy
+2017-10-28 11:10:36 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-28 11:10:43 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 3884 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-28 11:10:43 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-28 11:10:43 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-28 11:10:43 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62c447e5: startup date [Sat Oct 28 11:10:43 MSK 2017]; root of context hierarchy
+2017-10-28 11:10:44 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-28 11:10:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-28 11:10:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-28 11:10:44 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 11:10:44 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-28 11:10:45 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-28 11:10:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-28 11:10:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-28 11:10:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-28 11:10:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-28 11:10:45 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-28 11:10:45 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-28 11:10:45 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:10:45 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:10:45 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-28 11:10:45 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-28 11:10:45 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-28 11:10:45 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-28 11:10:45 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-28 11:10:45 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 2.383 seconds (JVM running for 5.928)
+2017-10-28 11:10:50 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 11:10:55 [http-nio-8080-exec-5] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='ALMIGHTY1'.
+2017-10-28 11:10:55 [pool-1-thread-1] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY1' destroyed.
+2017-10-28 11:10:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:10:55 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:12:44 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62c447e5: startup date [Sat Oct 28 11:10:43 MSK 2017]; root of context hierarchy
+2017-10-28 11:12:44 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-28 11:12:52 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 2832 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-28 11:12:52 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-28 11:12:52 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-28 11:12:52 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1fc50cc8: startup date [Sat Oct 28 11:12:52 MSK 2017]; root of context hierarchy
+2017-10-28 11:12:53 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-28 11:12:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-28 11:12:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-28 11:12:53 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 11:12:53 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-28 11:12:53 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-28 11:12:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-28 11:12:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-28 11:12:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-28 11:12:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-28 11:12:54 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-28 11:12:54 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-28 11:12:54 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:12:54 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-28 11:12:54 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-28 11:12:54 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-28 11:12:54 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-28 11:12:54 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-28 11:12:54 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-28 11:12:54 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 2.674 seconds (JVM running for 6.741)
+2017-10-28 11:12:54 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 11:12:58 [http-nio-8080-exec-4] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='ALMIGHTY1'.
+2017-10-28 11:12:58 [pool-1-thread-1] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY1' destroyed.
+2017-10-28 11:12:58 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-28 11:12:58 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY2' created.
+2017-10-28 11:13:08 [http-nio-8080-exec-5] INFO  c.j.g.service.RobotTrackerService - Setting command 'GO_FORWARD' to robot with id='ALMIGHTY2'.
+2017-10-28 11:13:08 [pool-1-thread-4] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY2' go forward.
+2017-10-28 11:13:14 [http-nio-8080-exec-2] INFO  c.j.g.service.RobotTrackerService - Setting command 'GO_FORWARD' to robot with id='ROCKET1'.
+2017-10-28 11:13:14 [http-nio-8080-exec-2] INFO  c.j.g.service.RobotTrackerService - Setting command 'GO_FORWARD' to robot with id='CANNON1'.
+2017-10-28 11:13:14 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' go forward.
+2017-10-28 11:13:14 [http-nio-8080-exec-2] INFO  c.j.g.service.RobotTrackerService - Setting command 'GO_FORWARD' to robot with id='ALMIGHTY2'.
+2017-10-28 11:13:14 [pool-1-thread-2] INFO  c.j.g.model.robots.CannonRobot - CANNON robot with id='CANNON1' go forward.
+2017-10-28 11:13:14 [pool-1-thread-4] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY2' go forward.
+2017-10-29 13:52:43 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 9680 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-29 13:52:43 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-29 13:52:43 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-29 13:52:44 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57478c53: startup date [Sun Oct 29 13:52:44 MSK 2017]; root of context hierarchy
+2017-10-29 13:52:47 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-29 13:52:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-29 13:52:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-29 13:52:48 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-29 13:52:48 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-29 13:52:48 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-29 13:52:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-29 13:52:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-29 13:52:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-29 13:52:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-29 13:52:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-29 13:52:49 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-29 13:52:49 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-29 13:52:49 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-29 13:52:49 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-29 13:52:49 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-29 13:52:49 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-29 13:52:49 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-29 13:52:49 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-29 13:52:49 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 6.357 seconds (JVM running for 37.782)
+2017-10-29 13:57:33 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-29 13:57:46 [http-nio-8080-exec-2] INFO  c.j.g.service.RobotTrackerService - Setting command 'GO_FORWARD' to robot with id='ROCKET1'.
+2017-10-29 13:57:46 [http-nio-8080-exec-2] INFO  c.j.g.service.RobotTrackerService - Setting command 'GO_FORWARD' to robot with id='CANNON1'.
+2017-10-29 13:57:46 [http-nio-8080-exec-2] INFO  c.j.g.service.RobotTrackerService - Setting command 'GO_FORWARD' to robot with id='ALMIGHTY1'.
+2017-10-29 13:57:46 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' go forward.
+2017-10-29 13:57:46 [pool-1-thread-2] INFO  c.j.g.model.robots.CannonRobot - CANNON robot with id='CANNON1' go forward.
+2017-10-29 13:57:46 [pool-1-thread-1] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY1' go forward.
+2017-10-29 13:58:02 [http-nio-8080-exec-9] INFO  c.j.g.service.RobotTrackerService - Setting command 'BLASTER_FIRE' to robot with id='ROCKET1'.
+2017-10-29 13:58:02 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' doesn't support command BLASTER_FIRE.
+2017-10-29 13:58:10 [http-nio-8080-exec-3] INFO  c.j.g.service.RobotTrackerService - Setting command 'BLASTER_FIRE' to robot with id='ALMIGHTY1'.
+2017-10-29 13:58:10 [pool-1-thread-1] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY1' produce blaster volley.
+2017-10-29 13:58:18 [http-nio-8080-exec-1] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='ALMIGHTY1'.
+2017-10-29 13:58:18 [pool-1-thread-1] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY1' destroyed.
+2017-10-29 13:58:18 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-29 13:58:18 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY2' created.
+2017-10-29 13:58:21 [http-nio-8080-exec-6] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='ROCKET1'.
+2017-10-29 13:58:21 [http-nio-8080-exec-6] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='CANNON1'.
+2017-10-29 13:58:21 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' destroyed.
+2017-10-29 13:58:21 [http-nio-8080-exec-6] INFO  c.j.g.service.RobotTrackerService - Setting command 'SELF_DESTRUCTION' to robot with id='ALMIGHTY2'.
+2017-10-29 13:58:21 [pool-1-thread-2] INFO  c.j.g.model.robots.CannonRobot - CANNON robot with id='CANNON1' destroyed.
+2017-10-29 13:58:21 [pool-1-thread-4] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY2' destroyed.
+2017-10-29 13:58:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-29 13:58:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY3' created.
+2017-10-29 13:58:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-29 13:58:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON2' created.
+2017-10-29 13:58:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-29 13:58:21 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET2' created.
+2017-10-29 14:02:13 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57478c53: startup date [Sun Oct 29 13:52:44 MSK 2017]; root of context hierarchy
+2017-10-29 14:02:13 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-29 14:02:22 [main] INFO  c.j.gameworld.GameWorldApplication - Starting GameWorldApplication on DESKTOP-HAH8JF0 with PID 9140 (D:\Projects\JazzTeam\gameworld\target\classes started by PRV in D:\Projects\JazzTeam\gameworld)
+2017-10-29 14:02:22 [main] DEBUG c.j.gameworld.GameWorldApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-29 14:02:22 [main] INFO  c.j.gameworld.GameWorldApplication - No active profile set, falling back to default profiles: default
+2017-10-29 14:02:22 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@291e2cf5: startup date [Sun Oct 29 14:02:22 MSK 2017]; root of context hierarchy
+2017-10-29 14:02:23 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-10-29 14:02:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2017-10-29 14:02:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-29 14:02:23 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-29 14:02:23 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-29 14:02:24 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-29 14:02:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-29 14:02:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-29 14:02:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-29 14:02:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-29 14:02:24 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-10-29 14:02:24 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-10-29 14:02:24 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ALMIGHTY
+2017-10-29 14:02:24 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ALMIGHTY robot with id='ALMIGHTY1' created.
+2017-10-29 14:02:24 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=CANNON
+2017-10-29 14:02:24 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - CANNON robot with id='CANNON1' created.
+2017-10-29 14:02:24 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - Creating robot with type=ROCKET
+2017-10-29 14:02:24 [pool-2-thread-1] INFO  c.j.gameworld.service.RobotService - ROCKET robot with id='ROCKET1' created.
+2017-10-29 14:02:25 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-10-29 14:02:25 [main] INFO  c.j.gameworld.GameWorldApplication - Started GameWorldApplication in 3.256 seconds (JVM running for 7.78)
+2017-10-29 14:02:25 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-29 14:06:45 [http-nio-8080-exec-2] INFO  c.j.g.service.RobotTrackerService - Setting command 'TURN_LEFT' to robot with id='ROCKET1'.
+2017-10-29 14:06:45 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' turn left.
+2017-10-29 14:07:35 [http-nio-8080-exec-9] INFO  c.j.g.service.RobotTrackerService - Setting command 'TURN_LEFT' to robot with id='CANNON1'.
+2017-10-29 14:07:35 [http-nio-8080-exec-9] INFO  c.j.g.service.RobotTrackerService - Setting command 'TURN_LEFT' to robot with id='ALMIGHTY1'.
+2017-10-29 14:07:35 [http-nio-8080-exec-9] INFO  c.j.g.service.RobotTrackerService - Setting command 'TURN_LEFT' to robot with id='ROCKET1'.
+2017-10-29 14:07:35 [pool-1-thread-2] INFO  c.j.g.model.robots.CannonRobot - CANNON robot with id='CANNON1' turn left.
+2017-10-29 14:07:35 [pool-1-thread-1] INFO  c.j.g.model.robots.AlmightyRobot - ALMIGHTY robot with id='ALMIGHTY1' turn left.
+2017-10-29 14:07:35 [pool-1-thread-3] INFO  c.j.g.model.robots.RocketRobot - ROCKET robot with id='ROCKET1' turn left.
+2017-10-29 14:07:47 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@291e2cf5: startup date [Sun Oct 29 14:02:22 MSK 2017]; root of context hierarchy
+2017-10-29 14:07:47 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

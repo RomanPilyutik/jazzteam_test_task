@@ -2,10 +2,12 @@ package com.jazzteam.gameworld.model.robots;
 
 import com.jazzteam.gameworld.model.commands.Command;
 import com.jazzteam.gameworld.model.commands.CommandType;
-
-import java.util.concurrent.BlockingQueue;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RocketRobot extends Robot {
+
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public RocketRobot(int idNumber, int queueCapacity) {
         super(idNumber, RobotType.ROCKET, queueCapacity);
@@ -16,7 +18,7 @@ public class RocketRobot extends Robot {
     public void executeCommand(Command command) {
         switch (command.getType()) {
             case ROCKET_FIRE:
-                System.out.println(this.toString() + "produce rocket volley.");
+                log.info(this.toString() + " produce rocket volley.");
                 break;
             default:
                 super.executeCommand(command);

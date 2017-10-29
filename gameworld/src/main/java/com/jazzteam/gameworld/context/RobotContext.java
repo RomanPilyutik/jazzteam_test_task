@@ -2,25 +2,29 @@ package com.jazzteam.gameworld.context;
 
 import com.jazzteam.gameworld.model.robots.Robot;
 import com.jazzteam.gameworld.model.robots.RobotType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
 @Component
 public class RobotContext {
+
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
     private Map<RobotType, Map<String, Robot>> robotCache = new HashMap<>();
     private Map<String, String> robotMapping = new HashMap<>();
+    private Map<RobotType, Integer> lastUsedRobotIdNumber = new HashMap<>();
 
     public RobotContext() {
         Properties prop = new Properties();
         InputStream input = null;
 
         try {
-            input = new FileInputStream("robotMapping.properties");
+            input = getClass().getClassLoader().getResourceAsStream("robotMapping.properties");
             prop.load(input);
 
             Enumeration<?> e = prop.propertyNames();
@@ -42,8 +46,6 @@ public class RobotContext {
         }
     }
 
-
-
     public Robot getRobotById(String robotId) {
         Robot robot = null;
         for(Map<String, Robot> robotsById : robotCache.values()) {
@@ -53,7 +55,7 @@ public class RobotContext {
             }
         }
         if(robot == null) {
-            System.out.println("Robot with id='" + robotId + "' doesn't exist in game world.");
+            log.info("Robot with id='" + robotId + "' doesn't exist in game world.");
         }
         return robot;
     }
@@ -62,12 +64,16 @@ public class RobotContext {
         if(robotCache.get(robot.getType()) != null) {
             robotCache.get(robot.getType()).remove(robot.getId());
         }
+        if(robotCache.get(robot.getType()).isEmpty()) {
+            robotCache.remove(robot.getType());
+        }
     }
 
     public void cacheRobot(Robot robot) {
         if(robotCache.get(robot.getType()) == null) {
             robotCache.put(robot.getType(), new HashMap<>());
         }
+        lastUsedRobotIdNumber.put(robot.getType(), robot.getIdNumber());
         robotCache.get(robot.getType()).put(robot.getId(), robot);
     }
 
@@ -92,11 +98,10 @@ public class RobotContext {
     }
 
     public int getFreeRobotIdNumber(RobotType robotType) {
-        List<String> robotIds = new ArrayList<>(robotCache.get(robotType).keySet());
-        Collections.sort(robotIds);
-        String lastCreatedId = robotIds.get(-1);
-        int idNumber = Integer.valueOf(lastCreatedId.replaceAll(robotType.toString(), "")) + 1;
-        return idNumber;
+        if(lastUsedRobotIdNumber.get(robotType) == null) {
+            return 1;
+        }
+        return lastUsedRobotIdNumber.get(robotType) + 1;
     }
 
     public List<Robot> getAllCachedRobots() {
