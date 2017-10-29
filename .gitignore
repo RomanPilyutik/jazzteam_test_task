@@ -2,6 +2,8 @@ gameworld/target/
 gameworld/out/
 !.mvn/wrapper/maven-wrapper.jar
 
+*.log
+
 ### STS ###
 .apt_generated
 .classpath
